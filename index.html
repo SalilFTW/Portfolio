@@ -1,0 +1,185 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salil Chauhan – Portfolio</title>
+  <meta name="description" content="Portfolio of Salil Chauhan – B.Tech (CSE) AI-ML student at SRMIST" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;         /* slate-900 */
+      --fg: #e2e8f0;         /* slate-200 */
+      --muted: #94a3b8;      /* slate-400 */
+      --card: #111827;       /* gray-900 */
+      --brand: #38bdf8;      /* sky-400 */
+      --brand-2: #22d3ee;    /* cyan-400 */
+      --chip: #1f2937;       /* gray-800 */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: linear-gradient(180deg, var(--bg), #0b1224); color: var(--fg); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(2,6,23,.6); border-bottom: 1px solid rgba(255,255,255,.05); z-index: 50; }
+    header .nav { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    header .nav a { margin-left: 16px; font-weight: 600; color: var(--fg); opacity: .9; }
+    header .nav a:hover { opacity: 1; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,.15); color: var(--fg); }
+    .btn.primary { background: linear-gradient(90deg, var(--brand), var(--brand-2)); color: #0b1224; border: none; }
+    .hero { padding: 60px 0 20px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+    .hero h1 { font-size: 42px; line-height: 1.1; margin: 0; }
+    .hero p.lead { font-size: 18px; color: var(--muted); margin-top: 6px; }
+    .card { background: rgba(17,24,39,.7); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { background: var(--chip); padding: 6px 10px; border: 1px solid rgba(255,255,255,.06); border-radius: 999px; font-size: 13px; color: var(--fg); }
+    section { padding: 26px 0; }
+    h2 { font-size: 22px; margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 18px; }
+    .grid { display: grid; gap: 18px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    footer { border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); padding: 30px 0 50px; margin-top: 24px; }
+    .muted { color: var(--muted); }
+    .avatar { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 18px; border: 1px solid rgba(255,255,255,.08); }
+    .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .contact-row a { color: var(--fg); }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } header .nav .hide-sm { display: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div><strong>Salil Chauhan</strong></div>
+      <nav class="hide-sm">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="row">
+        <a class="btn" href="mailto:salilchauhangov@gmail.com">Email</a>
+        <a class="btn" href="tel:+918595665072">Call</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Salil Chauhan</h1>
+        <p class="lead">3rd Year B.Tech (CSE) — AI &amp; ML · SRM Institute of Science &amp; Technology (SRMIST) · Based in Chennai , India</p>
+        <p class="muted">Curious, hands-on student interested in applied machine learning, data visualization, and web fundamentals. I like turning messy data into useful tools, and I value clarity and clean code.</p>
+        <div class="row" style="margin-top:14px;">
+          <a class="btn primary" href="#contact">Contact me</a>
+          <a class="btn" href="#projects">See projects</a>
+        </div>
+      </div>
+      <div class="grid">
+        <img class="avatar" src="https://i.ibb.co/QjzMT8fd/salil.jpg" alt="Salil Chauhan headshot (replace with your photo)" />
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Objective</h3>
+          <p class="muted" style="margin:0;">Seeking internships or project collabs where I can learn-by-doing and ship end‑to‑end ML features: data prep, modeling, and lightweight deployment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p>I'm a 3rd‑year B.Tech CSE (AI‑ML) student at <strong>SRMIST</strong>. I’ve tinkered with computer vision (YOLOv8), NLP classification (BERT vs SVM), and interactive dashboards.</p>
+          <p class="muted">Outside coursework I practice DSA, explore open‑source issues, play guitar, and beatbox.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Based in</h3>
+          <p class="muted" style="margin:0;">New Delhi, India</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <strong>Core</strong>
+          <div class="chips" style="margin-top:10px;">
+            <span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">MySQL</span><span class="chip">Git</span>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Data &amp; ML</strong>
+          <div class="chips" style="margin-top:10px;">
+            <span class="chip">Data Visualization</span><span class="chip">Statistical Interpretation</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">scikit‑learn</span>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Web</strong>
+          <div class="chips" style="margin-top:10px;">
+            <span class="chip">HTML</span><span class="chip">CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="margin-top:0;">VisionGuard: Helmet &amp; Violation Detection</h3>
+          <p class="muted">Real-time CCTV analysis with YOLOv8 and DeepSORT; mAP@50 0.91, ~25 FPS on RTX 3060, REST alerts.</p>
+          <div class="row"><a class="btn" href="#" target="_blank">Code</a><a class="btn" href="#" target="_blank">Demo</a></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">SentimentSphere: Movie Reviews NLP</h3>
+          <p class="muted">End-to-end pipeline; SVM TF‑IDF (F1 0.93) vs BERT (F1 0.96). Web app prototype.</p>
+          <div class="row"><a class="btn" href="#" target="_blank">Code</a><a class="btn" href="#" target="_blank">Demo</a></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">CampusConnect: Placement Analytics</h3>
+          <p class="muted">Interactive dashboard for SRMIST placement trends; forecasting, role & CTC breakdowns.</p>
+          <div class="row"><a class="btn" href="#" target="_blank">Code</a><a class="btn" href="#" target="_blank">Demo</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <strong>SRM Institute of Science and Technology</strong> — B.Tech (CSE) in AI &amp; ML — <span class="muted">3rd Year</span><br/>
+        <span class="muted">1st year CGPA: 9</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <div class="row contact-row">
+          <strong>Email:</strong> <a href="mailto:salilchauhangov@gmail.com">salilchauhangov@gmail.com</a>
+        </div>
+        <div class="row contact-row" style="margin-top:8px;">
+          <strong>Phone:</strong> <a href="tel:+918595665072">+91 85956 65072</a>
+        </div>
+        <div class="row" style="margin-top:14px;">
+          <a class="btn primary" href="mailto:salilchauhangov@gmail.com">Email me</a>
+          <a class="btn" href="#" target="_blank">Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Salil Chauhan • Made with simple HTML &amp; CSS
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
